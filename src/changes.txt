@@ -1,0 +1,25 @@
+﻿***************************************************************************************************
+*** Libreria para Cedula de Identificación Fiscal 
+*** Versión: 1.0 01/04/2023 0104202310
+***************************************************************************************************
+
+** Revisiones:
+11/04/2023: 
+- Version 1.0.0.2
+- bandera para indicar si el servicio debe almacenar la respuesta html
+- se agrega log de errores
+
+18/04/2023
+- Version 1.0.0.3
+- se agrega contador a la llave por si se repite o existe mas de un elemento en HtmlToDiccionary.CreateRows(), 
+para los casos de las personas fisicas que tienen mas de un régimen.
+
+19/04/2023
+- se agrega método Execute(string url), con validación Uri.IsWellFormedUriString()
+Execute(string url)
+Execute(IRequest request)
+Execute(FileInfo fileInfo)
+
+02/05/2023
+- se agrega propiedad IdCIF para contener el número de la cedula de identificación
+- se agrega Regex para determinar el ID de la cedula fiscal
