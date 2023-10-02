@@ -4,10 +4,10 @@ using System.Drawing;
 using System.Text;
 using ThoughtWorks.QRCode.Codec;
 using ThoughtWorks.QRCode.Codec.Data;
-using Jaeger.SAT.CIF.Services.Entities;
-using Jaeger.SAT.CIF.Services.Interfaces;
+using Jaeger.SAT.CIF.Entities;
+using Jaeger.SAT.CIF.Interfaces;
 
-namespace Jaeger.SAT.CIF.Services.Abstracts {
+namespace Jaeger.SAT.CIF.Services {
     public class ServiceQR {
         #region declaraciones
         private const string _UrlCedulaFiscal = "https://siat.sat.gob.mx/app/qr/faces/pages/mobile/validadorqr.jsf?";

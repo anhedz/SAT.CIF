@@ -1,6 +1,6 @@
-﻿using static Jaeger.SAT.CIF.Services.Entities.CedulaFiscal;
+﻿using static Jaeger.SAT.CIF.Entities.CedulaFiscal;
 
-namespace Jaeger.SAT.CIF.Services.Interfaces {
+namespace Jaeger.SAT.CIF.Interfaces {
     public interface ICedulaFiscal {
         /// <summary>
         /// obtener o establecer Registro Federal de Contribuyentes

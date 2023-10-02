@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using HtmlAgilityPack;
 
-namespace Jaeger.SAT.CIF.Services.Helpers {
+namespace Jaeger.SAT.CIF.Helpers {
     internal class HtmlToDiccionary {
         /// <summary>
         /// convertir tabla html en direccionario de valores

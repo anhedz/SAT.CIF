@@ -1,7 +1,7 @@
 ﻿using System;
-using Jaeger.SAT.CIF.Services.Interfaces;
+using Jaeger.SAT.CIF.Interfaces;
 
-namespace Jaeger.SAT.CIF.Services.Entities {
+namespace Jaeger.SAT.CIF.Entities {
     public class PersonalMoral : IPersonalMoral {
         #region declaraciones
         private DateTime? _FechaConstitucion;

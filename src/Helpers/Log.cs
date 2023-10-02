@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace Jaeger.SAT.CIF.Services.Helpers {
+namespace Jaeger.SAT.CIF.Helpers {
     public class Log {
         public static void Escribir(string Texto, string stackTrace) {
             string logfileName = $"jaeger_sat_CedulaFiscal_{DateTime.Now:dd_MM_yyyy}.txt";

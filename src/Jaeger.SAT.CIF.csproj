@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IResponseQR.cs" />
-    <Compile Include="Abstracts\ServiceQR.cs" />
+    <Compile Include="Services\ServiceQR.cs" />
     <Compile Include="Helpers\ImageRenderListener.cs" />
     <Compile Include="Interfaces\IRegimenFiscal.cs" />
     <Compile Include="Builder\RequestBuilder.cs" />

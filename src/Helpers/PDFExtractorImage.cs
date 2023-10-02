@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using iTextSharp.text.pdf.parser;
 using iTextSharp.text.pdf;
 
-namespace Jaeger.SAT.CIF.Services.Helpers {
+namespace Jaeger.SAT.CIF.Helpers {
     /// <summary>Helper class to extract images from a PDF file. Works with the most
     /// common image types embedded in PDF files, as far as I can tell.</summary>
     /// <example>

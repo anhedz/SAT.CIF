@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using iTextSharp.text.pdf.parser;
 using iTextSharp.text.pdf;
 
-namespace Jaeger.SAT.CIF.Services.Helpers {
+namespace Jaeger.SAT.CIF.Helpers {
     internal class ImageRenderListener : IRenderListener {
         #region Fields
         private readonly Dictionary<Image, string> _Images = new Dictionary<Image, string>();

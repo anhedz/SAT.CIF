@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
-using Jaeger.SAT.CIF.Services.Entities;
-using Jaeger.SAT.CIF.Services.Helpers;
-using Jaeger.SAT.CIF.Services.Interfaces;
+using Jaeger.SAT.CIF.Entities;
+using Jaeger.SAT.CIF.Helpers;
+using Jaeger.SAT.CIF.Interfaces;
 
-namespace Jaeger.SAT.CIF.Services.Abstracts {
+namespace Jaeger.SAT.CIF.Abstracts {
 
     public abstract class ServiceBase {
         #region declaraciones

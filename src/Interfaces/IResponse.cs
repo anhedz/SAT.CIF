@@ -1,4 +1,4 @@
-﻿namespace Jaeger.SAT.CIF.Services.Interfaces {
+﻿namespace Jaeger.SAT.CIF.Interfaces {
     public interface IResponse {
         /// <summary>
         /// obtener o establecer es el objeto es valido

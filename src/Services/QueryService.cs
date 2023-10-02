@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using Jaeger.SAT.CIF.Services.Interfaces;
-using Jaeger.SAT.CIF.Services.Abstracts;
+using Jaeger.SAT.CIF.Interfaces;
+using Jaeger.SAT.CIF.Abstracts;
 
 namespace Jaeger.SAT.CIF.Services {
     public class QueryService : ServiceBase, IQueryService {

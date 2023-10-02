@@ -1,6 +1,6 @@
-﻿using Jaeger.SAT.CIF.Services.Interfaces;
+﻿using Jaeger.SAT.CIF.Interfaces;
 
-namespace Jaeger.SAT.CIF.Services.Entities {
+namespace Jaeger.SAT.CIF.Entities {
     public class CedulaFiscal : ICedulaFiscal {
         public enum TipoPersonaEnum {
             Fisica = 1,

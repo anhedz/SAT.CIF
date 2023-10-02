@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 
-namespace Jaeger.SAT.CIF.Services.Helpers {
+namespace Jaeger.SAT.CIF.Helpers {
     public class PDFExtractor {
         public static Dictionary<string, string> GetData(string fileName) {
             var contenido = PDFExtractor.GetText(fileName);

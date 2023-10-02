@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jaeger.SAT.CIF.Services.Interfaces {
+namespace Jaeger.SAT.CIF.Interfaces {
     /// <summary>
     /// Regimen Fiscal
     /// </summary>

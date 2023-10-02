@@ -1,4 +1,4 @@
-﻿using Jaeger.SAT.CIF.Services.Interfaces;
+﻿using Jaeger.SAT.CIF.Interfaces;
 
 namespace Jaeger.SAT.CIF.Services {
     public interface IQueryService {

@@ -1,4 +1,4 @@
-﻿namespace Jaeger.SAT.CIF.Services.Interfaces {
+﻿namespace Jaeger.SAT.CIF.Interfaces {
     public interface IRegimenSAT {
         /// <summary>
         /// obtener o establecer clave del regimen fiscal

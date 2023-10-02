@@ -1,6 +1,6 @@
-﻿using Jaeger.SAT.CIF.Services.Interfaces;
+﻿using Jaeger.SAT.CIF.Interfaces;
 
-namespace Jaeger.SAT.CIF.Services.Builder {
+namespace Jaeger.SAT.CIF.Builder {
     /// <summary>
     /// Builder
     /// </summary>
