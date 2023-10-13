@@ -181,7 +181,7 @@ namespace Jaeger.SAT.CIF.Abstracts {
             return perFisica;
         }
 
-        public IPersonalMoral GetDataPersonaMoral(string rfc, string[] array) {
+        public IPersonaMoral GetDataPersonaMoral(string rfc, string[] array) {
             var perMoral = new PersonalMoral(rfc);
             var regimenFiscal = new RegimenFiscal();
             string[] filas = array;

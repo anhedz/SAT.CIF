@@ -2,7 +2,7 @@
 using Jaeger.SAT.CIF.Interfaces;
 
 namespace Jaeger.SAT.CIF.Entities {
-    public class PersonalMoral : IPersonalMoral {
+    public class PersonalMoral : IPersonaMoral {
         #region declaraciones
         private DateTime? _FechaConstitucion;
         private DateTime? _FechaUltimoCambio;

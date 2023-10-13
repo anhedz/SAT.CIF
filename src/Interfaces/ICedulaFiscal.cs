@@ -16,7 +16,7 @@ namespace Jaeger.SAT.CIF.Interfaces {
 
         IPersonaFisica Fisica { get; set; }
 
-        IPersonalMoral Moral { get; set; }
+        IPersonaMoral Moral { get; set; }
 
         ICedulaFiscal AddRFC(string rfc);
     }

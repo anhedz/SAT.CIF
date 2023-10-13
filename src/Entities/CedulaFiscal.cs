@@ -32,6 +32,6 @@ namespace Jaeger.SAT.CIF.Entities {
 
         public IPersonaFisica Fisica { get; set; }
 
-        public IPersonalMoral Moral { get; set; }
+        public IPersonaMoral Moral { get; set; }
     }
 }

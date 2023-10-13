@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Jaeger.SAT.CIF.Interfaces {
-    public interface IPersonalMoral {
+    public interface IPersonaMoral {
         /// <summary>
         /// obtener o establrcer la Clave del Registro Federal de Contribuyentes correspondiente al contribuyente sin guiones o espacios
         /// </summary>

@@ -90,7 +90,7 @@
     <Compile Include="Helpers\HtmlToDiccionary.cs" />
     <Compile Include="Interfaces\IDomicilioFiscal.cs" />
     <Compile Include="Interfaces\IPersonaFisica.cs" />
-    <Compile Include="Interfaces\IPersonalMoral.cs" />
+    <Compile Include="Interfaces\IPersonaMoral.cs" />
     <Compile Include="Interfaces\IRegimenSAT.cs" />
     <Compile Include="Interfaces\IRequest.cs" />
     <Compile Include="Interfaces\IResponse.cs" />
