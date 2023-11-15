@@ -17,6 +17,8 @@ namespace Jaeger.SAT.CIF.Interfaces {
 
         string SegundoApellido { get; set; }
 
+        string NombreCompleto { get; }
+
         /// <summary>
         /// obtener o establecer fecha de nacimineto
         /// </summary>

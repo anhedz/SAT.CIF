@@ -44,5 +44,7 @@ namespace Jaeger.SAT.CIF.Interfaces {
         #region caracteristicas fiscales (vigente)
         IRegimenFiscal RegimenFiscal { get; set; }
         #endregion
+
+        string NombreComercial { get; }
     }
 }

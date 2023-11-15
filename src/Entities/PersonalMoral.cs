@@ -45,6 +45,10 @@ namespace Jaeger.SAT.CIF.Entities {
         /// </summary>
         public string RegimenCapital { get; set; }
 
+        public string NombreComercial {
+            get { return string.Format("{0} {1}", this.Nombre, this.RegimenCapital); }
+        }
+
         /// <summary>
         /// obtener o establecer fecha de constitucion
         /// </summary>
