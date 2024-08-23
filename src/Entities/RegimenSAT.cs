@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Jaeger.SAT.CIF.Interfaces;
 
 namespace Jaeger.SAT.CIF.Entities {
+    /// <summary>
+    /// modelo de Regimen Fiscal
+    /// </summary>
     public class RegimenSAT : IRegimenSAT {
-        public RegimenSAT() {
-        }
+        public RegimenSAT() { }
 
         /// <summary>
-        /// 
+        /// constructor
         /// </summary>
         /// <param name="clave">clave</param>
         /// <param name="descripcion">nombre o descripcion del regimen</param>
@@ -17,14 +19,19 @@ namespace Jaeger.SAT.CIF.Entities {
             this.Descripcion = descripcion;
         }
 
+        /// <summary>
+        /// obtener o establecer clave del regimen fiscal
+        /// </summary>
         public string Clave { get; set; }
 
+        /// <summary>
+        /// obtener o establecer descripcion
+        /// </summary>
         public string Descripcion { get; set; }
 
-        public override string ToString() {
-            return string.Format("{0} - {1}", this.Clave, this.Descripcion);
-        }
-
+        /// <summary>
+        /// lista de regimenes fiscales 
+        /// </summary>
         public static List<IRegimenSAT> GetList() {
             var regimenSATs = new List<IRegimenSAT>() {
                 new RegimenSAT("601", "General de Ley Personas Morales"),
@@ -54,8 +61,17 @@ namespace Jaeger.SAT.CIF.Entities {
             return regimenSATs;
         }
 
+        /// <summary>
+        /// obtener o establecer
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>retorna clase regimen fiscal a partir de la descripcion</returns>
         public static IRegimenSAT Get(string name) {
             return GetList().FirstOrDefault<IRegimenSAT>((IRegimenSAT x) => name.ToLower().Contains(name.ToLower()));
+        }
+
+        public override string ToString() {
+            return string.Format("{0} - {1}", this.Clave, this.Descripcion);
         }
     }
 }

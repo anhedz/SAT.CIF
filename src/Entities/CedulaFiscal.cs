@@ -28,10 +28,19 @@ namespace Jaeger.SAT.CIF.Entities {
         /// </summary>
         public string RFC { get; set; }
 
+        /// <summary>
+        /// id
+        /// </summary>
         public string IdCIF { get; set; }
 
+        /// <summary>
+        /// fisica
+        /// </summary>
         public IPersonaFisica Fisica { get; set; }
 
+        /// <summary>
+        /// moral
+        /// </summary>
         public IPersonaMoral Moral { get; set; }
     }
 }

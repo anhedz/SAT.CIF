@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Jaeger.SAT.CIF.Interfaces {
     public interface IPersonaMoral {
@@ -43,6 +44,7 @@ namespace Jaeger.SAT.CIF.Interfaces {
 
         #region caracteristicas fiscales (vigente)
         IRegimenFiscal RegimenFiscal { get; set; }
+        List<IRegimenFiscal> Regimenes { get; }
         #endregion
 
         string NombreComercial { get; }

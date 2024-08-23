@@ -9,7 +9,9 @@ using Jaeger.SAT.CIF.Helpers;
 using Jaeger.SAT.CIF.Interfaces;
 
 namespace Jaeger.SAT.CIF.Abstracts {
-
+    /// <summary>
+    /// clase base
+    /// </summary>
     public abstract class ServiceBase {
         #region declaraciones
         private readonly string[] _Caracteres = new string[] { "&Aacute;", "Á", "&Agrave;", "À", "&Acirc;", "Â", "&Auml;", "Ä", "&Atilde;", "Ã", "&Aring;", "Å", "&aacute;", "á", "&agrave;", "à", "&acirc;", "â", "&auml;", "ä", "&atilde;", "ã", "&aring;", "å", "&Eacute;", "É", "&Egrave;", "È", "&Ecirc;", "Ê", "&Euml;", "Ë", "&eacute;", "é", "&egrave;", "è", "&ecirc;", "ê", "&euml;", "ë", "&Iacute;", "Í", "&Igrave;", "Ì", "&Icirc;", "Î", "&Iuml;", "Ï", "&iacute;", "í", "&igrave;", "ì", "&icirc;", "î", "&iuml;", "ï", "&Oacute;", "Ó", "&Ograve;", "Ò", "&Ocirc;", "Ô", "&Ouml;", "Ö", "&Otilde;", "Õ", "&oacute;", "ó", "&ograve;", "ò", "&ocirc;", "ô", "&ouml;", "ö", "&otilde;", "õ", "&Uacute;", "Ú", "&Ugrave;", "Ù", "&Ucirc;", "Û", "&Uuml;", "Ü", "&uacute;", "ú", "&ugrave;", "ù", "&ucirc;", "û", "&uuml;", "ü", "&Yacute;", "Ý", "&yacute;", "ý", "&yuml;", "ÿ", "&ntilde;", "ñ", "&Ntilde;", "Ñ", "&Ccedil;", "Ç", "&ccedil;", "ç", "&iexcl;", "¡", "&iquest;", "¿", "&acute;", "´", "&middot;", "·", "&cedil;", "¸", "&laquo;", "«", "&raquo;", "»", "&uml;", "¨", "&AElig;", "Æ", "&aelig;", "æ", "&szlig;", "ß", "&micro;", "µ", "&ETH;", "Ð", "&eth;", "ð", "&THORN;", "Þ", "&thorn;", "þ", "&cent;", "¢", "&pound;", "£", "&curren;", "¤", "&yen;", "¥", "&euro;", "€", "&#36;", "$", "&sup1;", "¹", "&sup2;", "²", "&sup3;", "³", "&times;", "×", "&divide;", "÷", "&plusmn;", "±", "&frac14;", "¼", "&frac12;", "½", "&frac34;", "¾", "&Oslash;", "Ø", "&oslash;", "ø", "&not;", "¬", "&lt;", "<", "&gt;", ">", "&amp;", "&", "&nbsp;", " ", "&quot;", "\"", "&ordm;", "º", "&ordf;", "ª", "&copy;", "©", "&reg;", "®", "&deg;", "°", "&brvbar;", "¦", "&sect;", "§", "&para;", "¶", "&macr;", "¯" };

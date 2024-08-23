@@ -23,3 +23,7 @@ Execute(FileInfo fileInfo)
 02/05/2023
 - se agrega propiedad IdCIF para contener el número de la cedula de identificación
 - se agrega Regex para determinar el ID de la cedula fiscal
+
+23/08/2024
+- actualización HtmlAgilityPack 1.11.64
+- documentación

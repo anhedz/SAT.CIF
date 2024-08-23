@@ -1,4 +1,7 @@
 ﻿namespace Jaeger.SAT.CIF.Interfaces {
+    /// <summary>
+    /// modelo de Regimen Fiscal
+    /// </summary>
     public interface IRegimenSAT {
         /// <summary>
         /// obtener o establecer clave del regimen fiscal

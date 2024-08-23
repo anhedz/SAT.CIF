@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Jaeger.SAT.CIF.Interfaces;
 
 namespace Jaeger.SAT.CIF.Entities {
@@ -10,6 +11,9 @@ namespace Jaeger.SAT.CIF.Entities {
         private IDomicilioFiscal _DomicilioFiscal;
         #endregion
 
+        /// <summary>
+        /// constructor
+        /// </summary>
         public PersonalMoral() {
             this._DomicilioFiscal = new DomicilioFiscal();
         }
@@ -45,6 +49,9 @@ namespace Jaeger.SAT.CIF.Entities {
         /// </summary>
         public string RegimenCapital { get; set; }
 
+        /// <summary>
+        /// obtener nombre comercial
+        /// </summary>
         public string NombreComercial {
             get { return string.Format("{0} {1}", this.Nombre, this.RegimenCapital); }
         }
@@ -103,7 +110,17 @@ namespace Jaeger.SAT.CIF.Entities {
         }
 
         #region caracteristicas fiscales (vigente)
+        /// <summary>
+        /// obtener Regimen Fiscal de la persona moral
+        /// </summary>
         public IRegimenFiscal RegimenFiscal { get; set; }
+
+        /// <summary>
+        /// obtener lista de Regimenes Fiscales
+        /// </summary>
+        public List<IRegimenFiscal> Regimenes {
+            get { return new List<IRegimenFiscal> { this.RegimenFiscal }; }
+        }
         #endregion
 
         public override string ToString() {
