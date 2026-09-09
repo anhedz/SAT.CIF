@@ -38,3 +38,9 @@ para los casos de las personas fisicas que tienen mas de un régimen.
 - Version 1.0.0.2
 - bandera para indicar si el servicio debe almacenar la respuesta html
 - se agrega log de errores
+
+08/09/2026
+- Version 1.0.5
+- actualización HtmlAgilityPack 1.11.65
+- refactoring de la clase HtmlToDiccionary
+- agregar CedulaFiscalParser para parsear la cedula de identificación fiscal

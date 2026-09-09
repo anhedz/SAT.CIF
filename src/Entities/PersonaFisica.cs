@@ -109,6 +109,10 @@ namespace Jaeger.SAT.CIF.Entities {
         }
 
         public override string ToString() {
+            var regimenes = new System.Text.StringBuilder();
+            foreach (var regimen in this.Regimenes) {
+                regimenes.AppendLine(regimen.ToString());
+            }
             return string.Format("RFC: {0}\r\nDatos de Identificación\r\nCURP: {1}\r\nNombre: {2}\r\nApellido Paterno: {3}\r\nApellido Materno: {4}\r\nFecha Nacimiento: {5}\r\nFecha de Inicio de operaciones: {6}\r\nSituación del contribuyente: {7}\r\nFecha del último cambio de situación: {8}\r\nDatos de Ubicación (domicilio fiscal, vigente)\r\nEntidad Federativa: {9}\r\nMunicipio o delegación: {10}\r\nColonia: {11}\r\nTipo de vialidad: {12}\r\nNombre de la vialidad: {13}\r\nNúmero exterior: {14}\r\nNúmero interior: {15}\r\nCP: {16}\r\nCorreo electrónico: {17}\r\nAL: {18}\r\nCaracterísticas fiscales\r\nRégimen: {19}\r\nFecha de alta: {20}\r\n",
                 this.RFC,
                 this.CURP,
@@ -128,7 +132,7 @@ namespace Jaeger.SAT.CIF.Entities {
                 this.DomicilioFiscal.NumInterior,
                 this._DomicilioFiscal.CodigoPostal,
                 this.DomicilioFiscal.Correo,
-                this.DomicilioFiscal.Al, Regimenes.ToString(),
+                this.DomicilioFiscal.Al, regimenes.ToString(),
                 "");
         }
     }

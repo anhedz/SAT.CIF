@@ -27,3 +27,8 @@ Execute(FileInfo fileInfo)
 23/08/2024
 - actualización HtmlAgilityPack 1.11.64
 - documentación
+
+08/09/2026
+- actualización HtmlAgilityPack 1.11.65
+- refactoring de la clase HtmlToDiccionary
+- agregar CedulaFiscalParser para parsear la cedula de identificación fiscal

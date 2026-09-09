@@ -1,39 +1,15 @@
-﻿using System.Linq;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Jaeger.SAT.CIF.Interfaces;
 
 namespace Jaeger.SAT.CIF.Entities {
     /// <summary>
-    /// modelo de Regimen Fiscal
+    /// Catálogo de regímenes fiscales utilizados por la Cédula Fiscal.
     /// </summary>
     public class RegimenSAT : IRegimenSAT {
-        public RegimenSAT() { }
-
-        /// <summary>
-        /// constructor
-        /// </summary>
-        /// <param name="clave">clave</param>
-        /// <param name="descripcion">nombre o descripcion del regimen</param>
-        public RegimenSAT(string clave, string descripcion) {
-            this.Clave = clave;
-            this.Descripcion = descripcion;
-        }
-
-        /// <summary>
-        /// obtener o establecer clave del regimen fiscal
-        /// </summary>
-        public string Clave { get; set; }
-
-        /// <summary>
-        /// obtener o establecer descripcion
-        /// </summary>
-        public string Descripcion { get; set; }
-
-        /// <summary>
-        /// lista de regimenes fiscales 
-        /// </summary>
-        public static List<IRegimenSAT> GetList() {
-            var regimenSATs = new List<IRegimenSAT>() {
+        private static readonly IReadOnlyList<IRegimenSAT> Items =
+            new List<IRegimenSAT> {
                 new RegimenSAT("601", "General de Ley Personas Morales"),
                 new RegimenSAT("603", "Personas Morales con Fines no Lucrativos"),
                 new RegimenSAT("605", "Sueldos y Salarios e Ingresos Asimilados a Salarios"),
@@ -58,20 +34,35 @@ namespace Jaeger.SAT.CIF.Entities {
                 new RegimenSAT("629", "De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales"),
                 new RegimenSAT("630", "Enajenación de acciones en bolsa de valores")
             };
-            return regimenSATs;
+
+        public RegimenSAT() { }
+
+        public RegimenSAT(string clave, string descripcion) {
+            Clave = clave;
+            Descripcion = descripcion;
         }
 
-        /// <summary>
-        /// obtener o establecer
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns>retorna clase regimen fiscal a partir de la descripcion</returns>
+        public string Clave { get; set; }
+
+        public string Descripcion { get; set; }
+
+        public static List<IRegimenSAT> GetList() {
+            return Items.ToList();
+        }
+
         public static IRegimenSAT Get(string name) {
-            return GetList().FirstOrDefault<IRegimenSAT>((IRegimenSAT x) => name.ToLower().Contains(name.ToLower()));
+            if (string.IsNullOrWhiteSpace(name)) {
+                return null;
+            }
+
+            return Items.FirstOrDefault(x =>
+                !string.IsNullOrWhiteSpace(x.Descripcion) &&
+                (string.Equals(x.Descripcion, name.Trim(), StringComparison.OrdinalIgnoreCase) ||
+                 name.IndexOf(x.Descripcion, StringComparison.OrdinalIgnoreCase) >= 0));
         }
 
         public override string ToString() {
-            return string.Format("{0} - {1}", this.Clave, this.Descripcion);
+            return $"{this.Clave} - {this.Descripcion}";
         }
     }
 }
